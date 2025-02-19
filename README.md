@@ -55,7 +55,7 @@
 	<div id="header-wrap">
 		<nav id="navbar">
 			<div class="main-logo">
-				<a href="index.html">Christina.</a>
+				<a href="index.html">AMX-Photography-LLC.</a>
 			</div>
 			<div class="action-menu">
 			  <input id="menu-toggle" type="checkbox" />
@@ -73,7 +73,7 @@
 			<div class="billboard-content d-flex mt-6 align-center">
 				
 				<div class="light text-center">
-					<h1 class="section-title mb-4">Hi, <strong>I'm Christina</strong></h1>
+					<h1 class="section-title mb-4">Hi, <strong>I'm AMX-Photography-LLC </strong></h1>
 					
 					<span class="designation typewrite" data-period="500" data-type='[ "a Photographer", "Creative Director", "& a coffee addict." ]'></span>
 					<p class="pt-3">consectetur adipisicing elit  eiusmod tempor incididunt ut labore et.</p>
@@ -242,7 +242,7 @@
 							<li>16122 CSW, Victoria 8007 Australia</li>
 							<li>+1 650-333-0000 / +1 561-334-0580</li>
 							<li><a href="mailto:info@yourcompany.com" class="colored">info@yourcompany.com</a></li>
-							<li>© 2021 Christina. All rights reserved.</li>
+							<li>© 2021 AMX-Photography-LLC. All rights reserved.</li>
 							<li>Designed by : <a href="https://www.templatesjungle.com/">TemplatesJungle</a></li>
 						</ul>
 					</div><!--detail-->
