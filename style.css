@@ -1,39 +1,3 @@
-/*
-Template Name: Christina
-Template URI: https://demo.templatesjungle.com/christina/
-Author: TemplatesJungle
-Author URI: https://templatesjungle.com/
-Description: Fashion Photographer is specially designed product packaged for Fashion Photographer by TemplatesJungle.
-*/
-
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
-
-/*------------------------------------*\
-    Table of contents
-\*------------------------------------*/
-/*
-1. Normalize
-2. Base Styles
-  - Clearfix
-  - Floating & Alignment
-3. Typography
-4. Divider Styles
-5. Image Styles
-  - Image with Caption
-6. Form Styles
-7. Button Styles
-  - Button Sizes
-  - Button Shapes
-  - Button Color Scheme
-8. Grid Layout
-  - Rows
-  - Columns
-  - Column with Border
-  - Responsive Utilities
-9. Table Styles
-10. Site Structure
 
 /*--------------------------------------------------------------
 /** 1. Normalize
@@ -235,177 +199,128 @@ td, th {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-/** 2. Base Styles
---------------------------------------------------------------*/
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
-  box-sizing: border-box;
-}
+/* Base Styles for larger screens (Desktops) */
 body {
-  font-family: Raleway, sans-serif;
-  line-height: 1.8;
-  color: #111;
-}
-body.no-scroll {
-    overflow: hidden;
-}
-a {
-  color: #111;
-}
-a:hover {
-  color: #d93c4d;
-  text-decoration: none;
-}
-ul, ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding: 0;
-}
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-ul li, ol li {
-  margin-bottom: 0;
-  outline: 0;
-}
-ul li.active a{
-  text-decoration: none;
-}
-ul li a{
-  color: #151515;
-}
-ul li a:hover{
-  text-decoration: none;
-}
-ul li:last-child,
-ol li:last-child {
-  margin-bottom: 0;
-}
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-.list-inline {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -0.5rem;
-}
-.list-inline > li {
-  display: inline-block;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-dl {
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-dt,
-dd {
-  line-height: 1.42857143;
-}
-dt {
-  font-weight: bold;
-}
-dd {
-  margin-left: 0;
-}
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  outline: 0;
-}
-figure {
-  margin: 0;
-  line-height: 1;
-}
-img {
-  display: inline-block;
-  border: 0;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-::selection {
-  background: #d93c4d;
-  color: #fff;
-  text-shadow: none;
-}
-::-moz-selection {
-  background: #d93c4d;
-  color: #fff;
-  text-shadow: none;
-}
-::-webkit-input-placeholder {
-  color: #646464; /* WebKit browsers */
-  -webkit-transition: color .2s;
-  transition: color .2s;
-}
-::-moz-placeholder {
-  color: #646464; /* Mozilla Firefox 19+ */
-  -webkit-transition: color .2s;
-  transition: color .2s;
-}
-:-ms-input-placeholder {
-  color: #646464;/* Internet Explorer 10+ */
-  -webkit-transition: color .2s;
-  transition: color .2s;
-}
-::placeholder {
-  color: #646464;
-  -webkit-transition: color .2s;
-  transition: color .2s;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.fade-in-page {
-  -webkit-animation: fade-in ease-in-out 1.3s both;
-  -moz-animation: fade-in ease-in-out 1.3s both;
-  animation: fade-in ease-in-out 1.3s both
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+header {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
 }
-@-moz-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.nav__list-item {
+    margin: 0 15px;
+}
+
+.nav__list-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Styles for Tablets and Smaller Screens (Medium Devices) */
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+        padding: 15px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__list-item {
+        margin: 10px 0;
+    }
+
+    .billboard-content {
+        text-align: center;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .portfolio-wrap {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    }
+}
+
+/* Styles for Mobile Devices (Small Screens) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .nav__list {
+        display: none; /* Hide navigation on small screens */
+        flex-direction: column;
+    }
+
+    .nav__list-item {
+        margin: 10px 0;
+    }
+
+    .billboard-content {
+        padding: 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .portfolio-wrap {
+        grid-template-columns: 1fr; /* One item per row */
+    }
+
+    .social-links ul {
+        flex-direction: row;
+    }
+}
+
+/* Media Query for Landscape Tablets */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .nav__list {
+        flex-direction: row;
+    }
+
+    .billboard-content {
+        text-align: left;
+    }
+
+    .portfolio-wrap {
+        grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    }
 }
 
 /* - Clearfix
 ------------------------------------------------------------- */
 .clearfix::before,
 .clearfix::after,
-.container::before,
-.container::after,
-.container-fluid::before,
-.container-fluid::after,
+::before,
+::after,
+-fluid::before,
+-fluid::after,
 .row::before,
 .row::after,
 .general-section::before,
