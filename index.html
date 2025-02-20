@@ -1,82 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>AMX Unison Photography LLC</title>
+	<title>AMX Photography LLC</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="AMX Unison Photography LLC">
-    <meta name="keywords" content="Photography, Portraits, Weddings, Fashion, AMX Unison">
-    <meta name="description" content="AMX Unison Photography LLC - Capturing stunning portraits, weddings, and fashion photography with a creative touch.">
-    
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="fonts/icomoon/icomoon.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body class="bg-black">
 
+<div class="preloader">
+	<svg>
+	  <g>
+	    <path d="M 50,100 A 1,1 0 0 1 50,0"/>
+	  </g>
+	  <g>
+	    <path d="M 50,75 A 1,1 0 0 0 50,-25"/>
+	  </g>
+	  <defs>
+	    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+	      <stop offset="0%" style="stop-color:#FF56A1;stop-opacity:1" />
+	      <stop offset="100%" style="stop-color:#FF9350;stop-opacity:1" />
+	    </linearGradient>
+	  </defs>
+	</svg>
+</div>
+
+<div class="nav nav-overlay">
+	<div class="nav__content">
+		<ul class="nav__list">
+			<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a></li>
+			<li class="nav__list-item"><a href="portfolio.html" class="hover-target">Portfolio</a></li>
+			<li class="nav__list-item"><a href="styles.html" class="hover-target">Styles</a></li>
+			<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
 <header id="header" class="light">
-    <div id="header-wrap">
-        <nav id="navbar">
-            <div class="main-logo">
-                <a href="index.html">AMX Unison Photography LLC</a>
-            </div>
-            <div class="action-menu">
-                <input id="menu-toggle" type="checkbox" />
-                <label class="menu-btn" for="menu-toggle">
-                    <span></span>
-                </label>
-            </div>
-        </nav>
-    </div>
+	<div id="header-wrap">
+		<nav id="navbar">
+			<div class="main-logo">
+				<a href="index.html">AMX Photography LLC By Adric.</a>
+			</div>
+			<div class="action-menu">
+			  <input id="menu-toggle" type="checkbox" />
+				<label class="menu-btn" for="menu-toggle">
+				<span></span>
+			   </label>
+			</div><!--action-menu-->
+		</nav>
+	</div><!--header-wrap-->
 </header>
 
-<section id="billboard" class="text-center light">
-    <h1>Hi, <strong>I'm Macharia</strong></h1>
-    <span class="designation typewrite" data-period="500" data-type='[ "a Photographer.", "a Film Producer.", "a Website Designer." ]'></span>
-    <p class="pt-3">Bringing creativity and vision to life through photography and film.</p>
-    <div class="button-container mt-5">
-        <a href="portfolio.html" class="btn btn-pill btn-outline-light">View Portfolio</a>
-        <a href="contact.html" class="btn btn-pill btn-outline-light">Contact Me</a>
-    </div>
+<div id="billboard">
+	<div class="container">
+		<div class="row">
+			<div class="billboard-content d-flex mt-6 align-center">
+				
+				<div class="light text-center">
+					<h1 class="section-title mb-4">Hi, <strong>I'm Macharia</strong></h1>
+					
+					<span class="designation typewrite" data-period="500" data-type='[ "a Photographer.", "a Film Producer.", "& a Website Designer." ]'></span>
+					<p class="pt-3">consectetur adipisicing elit  eiusmod tempor incididunt ut labore et.</p>
+
+					<div class="button-container d-flex justify-content-center mt-5">
+						
+						<a href="#" class="btn btn-pill btn-large btn-outline-light mr-3"><span>View Portfolio</span><i class="icon icon-arrow-down2"></i></a>
+						
+						<a href="#" class="btn btn-pill btn-large btn-outline-light mr-3"><span>Contact Me</span><i class="icon icon-arrow-down2"></i></a>
+
+					</div><!--button-box-->
+				</div><!--text-content-->
+
+				<div class="social-links">
+					<ul class="list-unstyled d-flex">
+						<li class="mr-3"><a href="#"><i class="icon icon-facebook m-1"></i></a></li>
+						<li class="mr-3"><a href="#"><i class="icon icon-instagram m-1"></i></a></li>
+						<li class="mr-3"><a href="#"><i class="icon icon-behance m-1"></i></a></li>
+						<li><a href="#"><i class="icon icon-pinterest-p m-1"></i></a></li>
+					</ul>
+				</div><!--social-links-->
+			</div>
+		</div>
+	</div>
+</div><!--billboard-->
+
+<section class="portfolio-wrap fancyboxeffect light padding-medium">
+
+	
+		<div class="d-flex flex-wrap col-md-12">
+	<div class="portfolio-container">
+			<div>
+				<a class="image-link" rel="gallery" href="images/largemodel1.jpg">
+					<img src="images/model1.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel2.jpg">
+					<img src="images/model2.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel3.jpg">
+					<img src="images/model3.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel4.jpg">
+					<img src="images/model4.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel5.jpg">
+					<img src="images/model5.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel6.jpg">
+					<img src="images/model1.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel5.jpg">
+					<img src="images/model5.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel2.jpg">
+					<img src="images/model2.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+
+			<div>
+				<a class="image-link" href="images/largemodel2.jpg">
+					<img src="images/model2.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel3.jpg">
+					<img src="images/model3.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel4.jpg">
+					<img src="images/model4.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel2.jpg">
+					<img src="images/model2.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel3.jpg">
+					<img src="images/model3.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel4.jpg">
+					<img src="images/model4.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel2.jpg">
+					<img src="images/model2.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+
+			<div>
+				<a class="image-link" href="images/largemodel1.jpg">
+					<img src="images/model1.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+			<div>
+				<a class="image-link" href="images/largemodel5.jpg">
+					<img src="images/model5.jpg" alt="model" class="galleryImg">
+				</a>
+			</div>
+
+	</div>
+		</div><!--col-md-12-->
+	
+	<div class="pix_btn btn-click text-center">
+		<a href="#" class="btn btn-pill btn-large btn-outline-light mr-3"><span>View all</span> 
+		<i class="icon icon-arrow-thin-right"></i></a>
+	</div>
+
 </section>
 
-<section class="portfolio-wrap light padding-medium">
-    <div class="portfolio-container d-flex flex-wrap">
-        <div><a href="images/largemodel1.jpg"><img src="images/model1.jpg" alt="Portrait Photography"></a></div>
-        <div><a href="images/largemodel2.jpg"><img src="images/model2.jpg" alt="Fashion Photography"></a></div>
-        <div><a href="images/largemodel3.jpg"><img src="images/model3.jpg" alt="Wedding Photography"></a></div>
-    </div>
-    <div class="text-center mt-5">
-        <a href="portfolio.html" class="btn btn-pill btn-outline-light">View All</a>
-    </div>
+<section class="about-us bg-grey light padding-xlarge">
+	<div class="container">
+		<div class="row">
+		<div class="border-top-right"></div><!--border-top-right-->
+		<div class="border-left-bottom"></div><!--border-left-bottom-->	
+			<div class="section-header text-center">
+				<h2 class="section-title mb-5">About the Business</h2>
+				<p>AMX Unison Photography LLC specializes in professional real estate photography and media services for agents across New Jersey, Delaware, New York, and Philadelphia. In addition to real estate, I offer high-quality film production services, including portraits, weddings, special events, corporate videos, commercials, short films, and documentaries—all tailored to fit your budget. My commitment to excellence and creativity ensures that every project is executed with precision and artistic vision.</p>
+			
+			</div>
+			<div class="pg-features flex-container mt-4">
+				<ul class="list-unstyled m-auto d-flex text-uppercase">
+					<li><a href="#">Portraits</a><i class="icon icon-star"></i></li>
+					<li><a href="#">Wedding</a><i class="icon icon-star"></i></li>
+					<li><a href="#">Fashion</a></li>
+				</ul>
+			</div><!--pg-features-->
+		</div>
+		<div class="pix_btn btn-click text-center mt-5">
+			<a href="#" class="btn btn-pill btn-large btn-outline-light mr-3" data-hover="click"><span>Hire Me</span> 
+			<i class="icon icon-check"></i></a>
+		</div>
+	</div>
 </section>
 
-<section class="about-us bg-grey light padding-xlarge text-center">
-    <h2>About the business</h2>AMX Unison Photography LLC specializes in professional real estate photography and media services for agents across New Jersey, Delaware, New York, and Philadelphia. In addition to real estate, I offer high-quality film production services, including portraits, weddings, special events, corporate videos, commercials, short films, and documentaries—all tailored to fit your budget. My commitment to excellence and creativity ensures that every project is executed with precision and artistic vision.  
+<footer id="footer" class="bg-black light padding-xlarge" style="background-image: url(images/photography.jpg);background-position: right;background-repeat: no-repeat;">
+	
+	<div class="container">
+		<div class="row">
+		
+			<div class="contact-information mt-4 d-flex">
+				
+				<div class="contact-detail col-md-6">
+					
+					<div class="detail mr-6 mb-4">
+						<ul class="list-unstyled colored-grey text-large">
+							<li>Located in the heart of Croydon, PA 19021, The business proudly serves the local community and surrounding areas, offering top-quality photography services tailored to your needs.</li>
+							<li>+1 [302] 722-7316</li>
+							<li><a href="adric@amxunisonphoto.com" class="colored">adric@amxunisonphoto.com</a></li>
+							<li>© 2025 AMX Unison Photography LLC. All rights reserved.</li>
+						</ul>
+					</div><!--detail-->
+					
+				</div><!--contact-detail-->
 
-Let me know if you'd like any adjustments!</p>
-    <div class="pix_btn mt-5">
-        <a href="contact.html" class="btn btn-pill btn-outline-light">Hire Me</a>
-    </div>
-</section>
+				<div class="col-md-6 p-0">
+					<div class="container">
+						<div class="row">
+							<h3>Quick Contact</h2>
+							<form action="contact.php" class="contact-form d-flex flex-wrap mt-4">
+								<input type="text" name="name" placeholder="Name" class="name mb-3" required>
+								<input type="text" name="E-mail/Phone Number" placeholder="E-mail/Phone Number" class="mb-3" required>
+								<textarea placeholder="Message" style="height: 150px;" required></textarea>
+								
+								<div class="pix_btn btn-click text-center mt-5">
+									<button type="submit" href="#" class="btn btn-pill btn-large btn-outline-light mr-3" data-hover="click"><span>Send Message</span> 
+									<i class="icon icon-paper-plane"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	<!--col-md-6-->		
 
-<footer id="footer" class="bg-black light padding-xlarge">
-    <div class="container text-center">
-        <ul class="list-unstyled">
-            <li>Contact: <a href="adric@amxunisonphoto.com">adric@amxunisonphoto.com</a></li>
-            <li>Location: [Located in the heart of Croydon, PA 19021, The business proudly serves the local community and surrounding areas, offering top-quality photography services tailored to your needs.]</li>
-            <li>Phone: +1 [(302 722-7316)]</li>
-        </ul>
-        <p>© 2025 AMX Unison Photography LLC. All rights reserved.</p>
-    </div>
+			</div><!--contact-information-->
+		</div>
+	</div>
 </footer>
-
 <script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
